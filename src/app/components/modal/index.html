@@ -39,7 +39,7 @@
       propertyName="providers"
     >
     An array property of <stache-code>providers</stache-code>. In Angular, a provider is something that can create or deliver a service. This property can be used to pass context values from the component that launches the modal to the modal component.
-    A 
+    A
     </sky-demo-page-property>
     <sky-demo-page-property
       propertyName="size"
@@ -111,6 +111,11 @@
   </sky-demo-page-properties>
 
   <sky-demo-page-properties sectionHeading="Modal instance events">
+    <sky-demo-page-property
+      propertyName="beforeClose"
+    >
+      An event that the modal instance emits when it is about to close. It emits a <stache-code>SkyModalBeforeCloseHandler</stache-code> object with a <stache-code>closeModal</stache-code> method that completes the close of the modal. The modal will not close unless the <stache-code>closeModal</stache-code> method is called if there is a subscription to this event.
+    </sky-demo-page-property>
     <sky-demo-page-property
       propertyName="closed"
     >
